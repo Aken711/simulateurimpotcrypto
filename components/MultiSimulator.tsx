@@ -242,7 +242,7 @@ export default function MultiSimulator() {
                   setShowEmailModal(false);
                   if (email.trim()) {
                     try {
-                      await fetch("https://formspree.io/f/m123abcd", {
+                      await fetch("https://formspree.io/f/xwkgrqgz", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ email, source: "simulateur-crypto" }),
