@@ -170,6 +170,8 @@ export default function MultiSimulator() {
 
           <input
             type="date"
+            min="2024-01-01"
+  max="2024-12-31"
             className="p-2 border rounded bg-white text-black"
             value={tx.date || ""}
             onChange={(e) =>
