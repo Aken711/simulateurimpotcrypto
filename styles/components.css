@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🧱 Design system */
+@layer components {
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-md;
+  }
+
+  .input {
+    @apply p-2 border border-gray-300 rounded bg-white text-gray-800 placeholder-gray-400 w-full;
+  }
+
+  .select {
+    @apply p-2 border border-gray-300 rounded bg-white text-gray-800 w-full;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition;
+  }
+
+  .section {
+    @apply max-w-5xl mx-auto space-y-4;
+  }
+
+  .title {
+    @apply text-2xl font-semibold mb-4;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
