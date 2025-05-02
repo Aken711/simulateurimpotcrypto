@@ -8,7 +8,7 @@ export default function EmailForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const res = await fetch("https://formspree.io/f/xwkgrqgz", {
+    const res = await fetch("https://formspree.io/f/mpwdzojj", {
       method: "POST",
       headers: {
         Accept: "application/json",
